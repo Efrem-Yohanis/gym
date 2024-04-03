@@ -131,7 +131,7 @@ h6 {
 }
 
 .dropdown-menu .dropdown-divider {
-  color: #a5c5fe;
+  color: #0c0c0d;
   margin: 0;
 }
 
@@ -180,6 +180,13 @@ h6 {
   }
 }
 
+.sidebar-divader
+{
+  color: #bcbcbe;
+  margin: 0;
+  flex: auto;
+  padding: 0;
+}
 /* Light Backgrounds */
 .bg-primary-light {
   background-color: #cfe2ff;
@@ -605,7 +612,7 @@ h6 {
   width: 300px;
   z-index: 996;
   transition: all 0.3s;
-  padding: 20px;
+  padding: 10px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #aab7cf transparent;
