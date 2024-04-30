@@ -1,0 +1,87 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+
+{% include 'nav.html' %}
+
+{% include 'aside.html'%}
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Manage Members</h1>
+      
+    </div><!-- End Page Title -->
+
+    <section class="section">
+
+      <div class="row">
+        <div class="col-12 ">
+      <div class="card overflow-auto">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+
+          <table class="table datatable">
+            <thead>
+              <tr>
+                <th scope="col">Member ID</th>
+                <th scope="col">Full Name</th>
+                <th scope="col">Plane Type</th>
+                <th scope="col">Paid Date</th>
+                <th scope="col">Expired Date</th>
+                <th scope="col">Remind Date</th>
+                <th scope="col">View</th>
+                <th scope="col">Update</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Brandon Jacob</td>
+                <td>3 Month</td>
+                <td>2016-05-25</td>
+                <td>2016-05-25</td>
+                <td>28</td>
+                <td><a href="detail_view.html" class="btn btn-info"><i class="bi bi-eye"></i></a></td>
+                <td><a href="update_user.html" class="btn btn-warning"><i class="bx bx-reset"></i></a></td>
+                <td><button class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                
+              </tr>
+
+              <tr>
+                <th scope="row">1</th>
+                <td>Brandon Jacob</td>
+                <td>3 Month</td>
+                <td>2016-05-25</td>
+                <td>2016-05-25</td>
+                <td>28</td>
+                <td><a href="detail_view.html" class="btn btn-info"><i class="bi bi-eye"></i></a></td>
+                <td><a href="update_user.html" class="btn btn-warning"><i class="bx bx-reset"></i></a></td>
+                <td><button class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+              </tr>
+
+
+              <tr>
+                <th scope="row">1</th>
+                <td>Brandon Jacob</td>
+                <td>3 Month</td>
+                <td>2016-05-25</td>
+                <td>2016-05-25</td>
+                <td>28</td>
+                <td><a href="detail_view.html" class="btn btn-info"><i class="bi bi-eye"></i></a></td>
+                <td><a href="update_user.html" class="btn btn-warning"><i class="bx bx-reset"></i></a></td>
+                <td><button class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+              </tr>
+              
+            </tbody>
+          </table>
+      
+        </div>
+      </div>
+    </div>  
+    </div>
+    </section>
+
+  </main><!-- End #main -->
+{% endblock %}
+

@@ -1,0 +1,56 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+
+{% include 'nav.html' %}
+
+{% include 'aside.html'%}
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Attendance</h1>
+      
+    </div><!-- End Page Title -->
+
+    <section class="section">
+
+      <div class="row">
+        <div class="col-12">
+      <div class="card overflow-auto">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+         
+        
+          <table class="table datatable">
+            <thead>
+              <tr>
+                
+                <th scope="col">Full Name</th>
+                <th scope="col">Plane Type</th>
+                <th scope="col">Date today</th>
+                <th scope="col">Remind Date</th>
+                <th scope="col">Expired Date</th>
+                <th scope="col">Attendance</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Brandon Jacob</td>
+                <td>3 Month</td>
+                <td>2016-05-25</td>
+                <td>28</td>
+                <td>2016-05-25</td>
+                <td><button class="btn btn-success" disabled><i class="bi bi-check-circle"></i></button></td>
+              </tr>
+            </tbody>
+          </table>
+      
+        </div>
+      </div>
+    </div>  
+    </div>
+    </section>
+
+  </main><!-- End #main -->
+{% endblock %}

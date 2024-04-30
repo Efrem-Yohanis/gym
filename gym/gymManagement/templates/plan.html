@@ -1,0 +1,84 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+
+{% include 'nav.html' %}
+
+{% include 'aside.html'%}
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Plan</h1>
+      
+    </div><!-- End Page Title -->
+
+    <section class="section">
+
+      <div class="row">
+        <div class="col-12">
+      <div class="card overflow-auto">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+         
+        
+          <table class="table datatable">
+            <thead>
+              <tr>
+                <th scope="col">Plan Type</th>
+                <th scope="col">Validity Period</th>
+                <th scope="col">Price</th>
+                <th scope="col">No. of Registerd</th>
+                <th scope="col">Up Date</th>
+                <th scope="col">Delete</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>One Month</th>
+                <td>2016-05-25</td>
+                <td>1000 ETB</td>
+                <td>30</td>
+                <td><button class="btn btn-warning"><i class="bx bx-reset"></i></button></td>
+                <td><button class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+              </tr>
+              <tr>
+                <th>three Month</th>
+                <td>2016-05-25</td>
+                <td>2500 ETB</td>
+                <td>20</td>
+                <td><button class="btn btn-warning"><i class="bx bx-reset"></i></button></td>
+                <td><button class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+              </tr>
+              <tr>
+                <th>six Month</th>
+                <td>2016-05-25</td>
+                <td>4000 ETB</td>
+                <td>10</td>
+                <td><button class="btn btn-warning"><i class="bx bx-reset"></i></button></td>
+                <td><button class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+              </tr>
+              <tr>
+                <th>One year</th>
+                <td>2016-05-25</td>
+                <td>7000 ETB</td>
+                <td>20</td>
+                <td><button class="btn btn-warning"><i class="bx bx-reset"></i></button></td>
+                <td><button class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+              </tr>
+              
+            </tbody>
+          </table>
+      
+        </div>
+      </div>
+<div class="text-end">
+    <a href="add_new_planne.html" class="btn btn-primary">Add New Plan</a>
+</div>
+
+    </div>  
+    </div>
+    </section>
+
+  </main><!-- End #main -->
+{% endblock %}

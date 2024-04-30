@@ -1,0 +1,70 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+
+{% include 'nav.html' %}
+
+{% include 'aside.html'%}
+  <main id="main" class="main">
+
+    
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-4">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">PDF</button>
+                <button type="button" class="btn btn-secondary">CSV</button>
+              </div>
+        </div>
+
+            <div class="col-12">
+              <div class="card recent-sales overflow-auto">
+
+                  <table class="table datatable">
+                    <thead>
+                      <tr>
+                        <th scope="col">Members ID</th>
+                        <th scope="col">Full Name</th>
+                        <th scope="col">Planne Type</th>
+                        <th scope="col">Paid Status</th>
+                        <th scope="col">Join Date</th>
+                        <th scope="col">Expired Date</th>
+                        <th scope="col">Remind Day</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><a href="#">2457</a></th>
+                        <td>Brandon Jacob</td>
+                        <td>One Month</a></td>
+                        <td>Paide</td>
+                        <td>02-23-2024</td>
+                        <td>02-23-2024</td>
+                        <td>23</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+
+              </div>
+            </div><!-- End Recent Sales -->
+
+          
+
+          </div>
+        </div><!-- End Left side columns -->
+
+      
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+ {% endblock %}
