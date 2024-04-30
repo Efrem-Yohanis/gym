@@ -26,5 +26,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('gymManagement.urls')),
 ] 
-urlpatterns + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
-urlpatterns += staticfiles_urlpatterns() 
+urlpatterns = urlpatterns + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+urlpatterns = urlpatterns + staticfiles_urlpatterns() 
